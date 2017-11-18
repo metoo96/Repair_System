@@ -1,0 +1,691 @@
+[ 2017-06-16T18:15:38+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-06-16T18:15:39+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-06-16T18:15:40+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/orderDistributeView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `state` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 and auth >0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2017-06-16T18:17:39+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/distributeOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin_to_order` [ RunTime:0.0003s ]
+SQL: INSERT INTO `admin_to_order` (`admin_id`,`order_id`,`time`,`msg`,`isend`) VALUES ('16','124','1497608259','','0') [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0005s ]
+SQL: UPDATE `order_list` SET `state`='1' WHERE `id` = 124 [ RunTime:0.0092s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-06-16T18:17:41+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/orderDistributeView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `state` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 and auth >0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2017-06-16T18:17:47+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/distributeOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin_to_order` [ RunTime:0.0003s ]
+SQL: INSERT INTO `admin_to_order` (`admin_id`,`order_id`,`time`,`msg`,`isend`) VALUES ('19','123','1497608266','','0') [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0004s ]
+SQL: UPDATE `order_list` SET `state`='1' WHERE `id` = 123 [ RunTime:0.0067s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-06-16T18:17:48+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/orderDistributeView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `state` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 and auth >0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2017-06-16T18:17:51+08:00 ] 117.136.79.59 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/orderDistributeView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162011398' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162011398 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `state` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 and auth >0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-06-16T22:01:14+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-06-16T22:01:15+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-06-16T22:01:16+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/OrderDistribute/orderDistributeView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162012111' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `state` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 and auth >0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
+
+[ 2017-06-16T22:01:18+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/CheckOrder/checkOrderView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162012111' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-06-16T22:01:19+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/CheckOrder/allDataView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE ( auth < 5 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_to_order` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_to_order`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `order_detail`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order_judge` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `order_judge`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-06-16T22:01:21+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/CheckOrder/checkOrderView.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162012111' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail` ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+NOTIC: [8] Undefined index: admin /var/www/html/ACM/repair_system/Application/Runtime/Cache/BackgroundAdmin/6b37729e800be5ebfe66855e9a4cb110.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-06-16T22:01:25+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/CheckOrder/listOption/id/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162012111' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin_to_order` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_to_order` WHERE `order_id` = 123 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `mobile` = '13418050803' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-06-16T22:02:28+08:00 ] 183.238.78.248 /ACM/repair_system/index.php/BackgroundAdmin/CheckOrder/listOption/id/124.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `admin_cookie` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin_cookie` WHERE `account` = '162012111' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `student_number` = 162012111 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_list` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_list` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `order_detail` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `admin_to_order` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_to_order` WHERE `order_id` = 124 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `mobile` = '15914384907' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
